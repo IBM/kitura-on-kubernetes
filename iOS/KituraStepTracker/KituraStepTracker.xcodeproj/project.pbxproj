@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		923D082B20B693FE00AD519D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D082A20B693FE00AD519D /* AppDelegate.swift */; };
+		923D082D20B693FE00AD519D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D082C20B693FE00AD519D /* UserViewController.swift */; };
+		923D082F20B693FE00AD519D /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D082E20B693FE00AD519D /* ShopViewController.swift */; };
+		923D083220B693FE00AD519D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923D083020B693FE00AD519D /* Main.storyboard */; };
+		923D083420B6940000AD519D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923D083320B6940000AD519D /* Assets.xcassets */; };
+		923D083720B6940000AD519D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923D083520B6940000AD519D /* LaunchScreen.storyboard */; };
+		923D083F20BD523700AD519D /* LeaderboardUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D083E20BD523700AD519D /* LeaderboardUserCell.swift */; };
+		923D084120BD537F00AD519D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D084020BD537F00AD519D /* User.swift */; };
+		923D084320BD53BF00AD519D /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D084220BD53BF00AD519D /* LeaderboardViewController.swift */; };
+		928B525520D7138100FC3D98 /* LeaderboardUserHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B525420D7138100FC3D98 /* LeaderboardUserHeaderCell.swift */; };
+		928B525720D74C0900FC3D98 /* ShopProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B525620D74C0900FC3D98 /* ShopProductCell.swift */; };
+		928B525A20D74CBE00FC3D98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B525820D74CBE00FC3D98 /* Product.swift */; };
+		928B525B20D74CBE00FC3D98 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B525920D74CBE00FC3D98 /* Transaction.swift */; };
+		928B525D20D76B9E00FC3D98 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B525C20D76B9E00FC3D98 /* TransactionsViewController.swift */; };
+		928B525F20D7708D00FC3D98 /* TransactionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928B525E20D7708D00FC3D98 /* TransactionsCell.swift */; };
+		92A715B420C511FD005F847C /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92A715B220C511FD005F847C /* User.xcdatamodeld */; };
+		C9CC2B69885B67A09295E8A2 /* Pods_KituraStepTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7E085684CAFCB1BEF18C95 /* Pods_KituraStepTracker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C3B93A05E53F51850F38B65 /* Pods-KituraStepTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraStepTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KituraStepTracker/Pods-KituraStepTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		923D082720B693FE00AD519D /* KituraStepTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraStepTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		923D082A20B693FE00AD519D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		923D082C20B693FE00AD519D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		923D082E20B693FE00AD519D /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		923D083120B693FE00AD519D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		923D083320B6940000AD519D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		923D083620B6940000AD519D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		923D083820B6940000AD519D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		923D083E20BD523700AD519D /* LeaderboardUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardUserCell.swift; sourceTree = "<group>"; };
+		923D084020BD537F00AD519D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		923D084220BD53BF00AD519D /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		928B525420D7138100FC3D98 /* LeaderboardUserHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardUserHeaderCell.swift; sourceTree = "<group>"; };
+		928B525620D74C0900FC3D98 /* ShopProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopProductCell.swift; sourceTree = "<group>"; };
+		928B525820D74CBE00FC3D98 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		928B525920D74CBE00FC3D98 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		928B525C20D76B9E00FC3D98 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		928B525E20D7708D00FC3D98 /* TransactionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsCell.swift; sourceTree = "<group>"; };
+		92A715B320C511FD005F847C /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		CD7E085684CAFCB1BEF18C95 /* Pods_KituraStepTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KituraStepTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C1B39DFD17F62C58B27C73 /* Pods-KituraStepTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KituraStepTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-KituraStepTracker/Pods-KituraStepTracker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		923D082420B693FE00AD519D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CC2B69885B67A09295E8A2 /* Pods_KituraStepTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14F960062653F7BE3F3C149A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B93A05E53F51850F38B65 /* Pods-KituraStepTracker.debug.xcconfig */,
+				D2C1B39DFD17F62C58B27C73 /* Pods-KituraStepTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D7602B83383968867173729 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD7E085684CAFCB1BEF18C95 /* Pods_KituraStepTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		923D081E20B693FD00AD519D = {
+			isa = PBXGroup;
+			children = (
+				923D082920B693FE00AD519D /* KituraStepTracker */,
+				923D082820B693FE00AD519D /* Products */,
+				14F960062653F7BE3F3C149A /* Pods */,
+				3D7602B83383968867173729 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		923D082820B693FE00AD519D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				923D082720B693FE00AD519D /* KituraStepTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		923D082920B693FE00AD519D /* KituraStepTracker */ = {
+			isa = PBXGroup;
+			children = (
+				924B1D9720CF1499004F89DE /* Models */,
+				924B1D9520CF1448004F89DE /* Controllers */,
+				924B1D9820CF1552004F89DE /* Views */,
+				923D082A20B693FE00AD519D /* AppDelegate.swift */,
+				923D083020B693FE00AD519D /* Main.storyboard */,
+				923D083320B6940000AD519D /* Assets.xcassets */,
+				923D083520B6940000AD519D /* LaunchScreen.storyboard */,
+				923D083820B6940000AD519D /* Info.plist */,
+			);
+			path = KituraStepTracker;
+			sourceTree = "<group>";
+		};
+		924B1D9520CF1448004F89DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				923D082C20B693FE00AD519D /* UserViewController.swift */,
+				923D082E20B693FE00AD519D /* ShopViewController.swift */,
+				928B525C20D76B9E00FC3D98 /* TransactionsViewController.swift */,
+				923D084220BD53BF00AD519D /* LeaderboardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		924B1D9720CF1499004F89DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				928B525820D74CBE00FC3D98 /* Product.swift */,
+				928B525920D74CBE00FC3D98 /* Transaction.swift */,
+				923D084020BD537F00AD519D /* User.swift */,
+				92A715B220C511FD005F847C /* User.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		924B1D9820CF1552004F89DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				923D083E20BD523700AD519D /* LeaderboardUserCell.swift */,
+				928B525620D74C0900FC3D98 /* ShopProductCell.swift */,
+				928B525E20D7708D00FC3D98 /* TransactionsCell.swift */,
+				928B525420D7138100FC3D98 /* LeaderboardUserHeaderCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		923D082620B693FE00AD519D /* KituraStepTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 923D083B20B6940000AD519D /* Build configuration list for PBXNativeTarget "KituraStepTracker" */;
+			buildPhases = (
+				4CDFE14ACAC4A5D61356E841 /* [CP] Check Pods Manifest.lock */,
+				923D082320B693FE00AD519D /* Sources */,
+				923D082420B693FE00AD519D /* Frameworks */,
+				923D082520B693FE00AD519D /* Resources */,
+				DA3FBAB843BC159466BCA975 /* [CP] Embed Pods Frameworks */,
+				DA834E4E7D4BC41C45BC11E4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraStepTracker;
+			productName = KituraStepTracker;
+			productReference = 923D082720B693FE00AD519D /* KituraStepTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		923D081F20B693FD00AD519D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Joe Anthony Peter Amanse";
+				TargetAttributes = {
+					923D082620B693FE00AD519D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 923D082220B693FD00AD519D /* Build configuration list for PBXProject "KituraStepTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 923D081E20B693FD00AD519D;
+			productRefGroup = 923D082820B693FE00AD519D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				923D082620B693FE00AD519D /* KituraStepTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		923D082520B693FE00AD519D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				923D083720B6940000AD519D /* LaunchScreen.storyboard in Resources */,
+				923D083420B6940000AD519D /* Assets.xcassets in Resources */,
+				923D083220B693FE00AD519D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CDFE14ACAC4A5D61356E841 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KituraStepTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA3FBAB843BC159466BCA975 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KituraStepTracker/Pods-KituraStepTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KituraKit/KituraKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KituraKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KituraStepTracker/Pods-KituraStepTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA834E4E7D4BC41C45BC11E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KituraStepTracker/Pods-KituraStepTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		923D082320B693FE00AD519D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928B525B20D74CBE00FC3D98 /* Transaction.swift in Sources */,
+				923D083F20BD523700AD519D /* LeaderboardUserCell.swift in Sources */,
+				928B525D20D76B9E00FC3D98 /* TransactionsViewController.swift in Sources */,
+				923D082F20B693FE00AD519D /* ShopViewController.swift in Sources */,
+				923D082B20B693FE00AD519D /* AppDelegate.swift in Sources */,
+				923D084120BD537F00AD519D /* User.swift in Sources */,
+				928B525720D74C0900FC3D98 /* ShopProductCell.swift in Sources */,
+				92A715B420C511FD005F847C /* User.xcdatamodeld in Sources */,
+				923D084320BD53BF00AD519D /* LeaderboardViewController.swift in Sources */,
+				928B525A20D74CBE00FC3D98 /* Product.swift in Sources */,
+				928B525F20D7708D00FC3D98 /* TransactionsCell.swift in Sources */,
+				923D082D20B693FE00AD519D /* UserViewController.swift in Sources */,
+				928B525520D7138100FC3D98 /* LeaderboardUserHeaderCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		923D083020B693FE00AD519D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				923D083120B693FE00AD519D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		923D083520B6940000AD519D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				923D083620B6940000AD519D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		923D083920B6940000AD519D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		923D083A20B6940000AD519D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		923D083C20B6940000AD519D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C3B93A05E53F51850F38B65 /* Pods-KituraStepTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24VUPDRF9D;
+				INFOPLIST_FILE = KituraStepTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyamanse.KituraStepTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		923D083D20B6940000AD519D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C1B39DFD17F62C58B27C73 /* Pods-KituraStepTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24VUPDRF9D;
+				INFOPLIST_FILE = KituraStepTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonyamanse.KituraStepTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		923D082220B693FD00AD519D /* Build configuration list for PBXProject "KituraStepTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923D083920B6940000AD519D /* Debug */,
+				923D083A20B6940000AD519D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		923D083B20B6940000AD519D /* Build configuration list for PBXNativeTarget "KituraStepTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923D083C20B6940000AD519D /* Debug */,
+				923D083D20B6940000AD519D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92A715B220C511FD005F847C /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92A715B320C511FD005F847C /* User.xcdatamodel */,
+			);
+			currentVersion = 92A715B320C511FD005F847C /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 923D081F20B693FD00AD519D /* Project object */;
+}

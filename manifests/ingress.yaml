@@ -1,0 +1,49 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/tls-acme: "True"
+    ingress.bluemix.net/redirect-to-https: "True"
+  name: ingress
+spec:
+  tls:
+    # - hosts:
+    #     - www.ibm-fitchain.com
+    #   secretName: ibm-fitchain-com-tls
+    - hosts:
+        - YOUR_INGRESS_SUBDOMAIN
+      secretName: YOUR_INGRESS_SECRET
+  backend:
+    serviceName: users
+    servicePort: 8080
+  rules:
+    # - host: www.ibm-fitchain.com
+    #   http:
+    #     paths:
+    #       - path: /users
+    #         backend:
+    #           serviceName: users
+    #           servicePort: 8080
+    #       - path: /shop
+    #         backend:
+    #           serviceName: shop
+    #           servicePort: 8080
+    #       - path: /leaderboard
+    #         backend:
+    #           serviceName: leaderboard
+    #           servicePort: 8080
+    - host: YOUR_INGRESS_SUBDOMAIN
+      http:
+        paths:
+          - path: /users
+            backend:
+              serviceName: users
+              servicePort: 8080
+          - path: /shop
+            backend:
+              serviceName: shop
+              servicePort: 8080
+          - path: /leaderboard
+            backend:
+              serviceName: leaderboard
+              servicePort: 8080

@@ -1,0 +1,60 @@
+{
+  "name": "KituraKit",
+  "version": "0.0.1",
+  "summary": "Allows developers to use Codable protocols in their front and back end applications and use the same code on the front and backend.",
+  "homepage": "https://github.com/IBM-Swift/KituraKit",
+  "license": {
+    "type": "APACHE 2.0",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "David Dunn": "davdunn2@uk.ibm.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/IBM-Swift/KituraKit",
+    "branch": "pod",
+    "submodules": true
+  },
+  "source_files": "Sources/KituraKit/*.swift",
+  "subspecs": [
+    {
+      "name": "KituraContracts",
+      "source_files": "Sources/KituraKit/KituraContracts/*.swift",
+      "subspecs": [
+        {
+          "name": "LoggerAPI",
+          "source_files": "Sources/KituraKit/LoggerAPI/*.swift"
+        }
+      ]
+    },
+    {
+      "name": "CircuitBreaker",
+      "source_files": "Sources/KituraKit/CircuitBreaker/*.swift",
+      "subspecs": [
+        {
+          "name": "LoggerAPI",
+          "source_files": "Sources/KituraKit/LoggerAPI/*.swift"
+        }
+      ]
+    },
+    {
+      "name": "SwiftyRequest",
+      "source_files": "Sources/KituraKit/SwiftyRequest/*.swift",
+      "subspecs": [
+        {
+          "name": "CircuitBreaker",
+          "source_files": "Sources/KituraKit/CircuitBreaker/*.swift",
+          "subspecs": [
+            {
+              "name": "LoggerAPI",
+              "source_files": "Sources/KituraKit/LoggerAPI/*.swift"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

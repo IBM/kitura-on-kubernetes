@@ -1,0 +1,6 @@
+framework module Pods_KituraStepTracker {
+  umbrella header "Pods-KituraStepTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

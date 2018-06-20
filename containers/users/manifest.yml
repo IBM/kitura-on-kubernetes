@@ -1,0 +1,9 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: users
+  buildpack: swift_buildpack
+  command: "'users'"
+  memory: 128M
+  random-route: true

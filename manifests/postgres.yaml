@@ -51,7 +51,9 @@ spec:
                 configMapKeyRef:
                   name: postgres-cm
                   key: POSTGRES_USER
-            # Note:
-            # For testing, this Postgres instance will not persist the data and will be in the container.
-            # When the container is deleted or restarted, data will be lost.
-            # If you want a persistent Postgres instance, mount a volume in /var/lib/postgresql/data.
+# Note:
+# For testing, this Postgres instance will not
+# persist the data and will be in the container.
+# When the container is deleted or restarted, data will be lost.
+# If you want a persistent Postgres instance,
+# mount a volume in /var/lib/postgresql/data.

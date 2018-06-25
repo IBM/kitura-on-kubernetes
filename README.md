@@ -1,4 +1,4 @@
-# DRAFT
+[![Build Status](https://travis-ci.com/IBM/kitura-on-kubernetes.svg?branch=master)](https://travis-ci.com/IBM/kitura-on-kubernetes)
 # Use Full-Stack Swift to develop iOS apps with Kitura in Kubernetes
 
 In this code pattern, we will create a simple step tracker iOS app written in Swift. The application's backend will also be written in Swift with the use of Kitura, a server-side web framework for Swift. This code pattern is for iOS developers who wish to write both their frontend and backend in one language. Working in one language helps developers concentrate and spend more time in the logic of their application rather than learning or dealing with another programming language. The 3 simple Kitura microservices will be deployed in Kubernetes, a container orchestration platform. The sample iOS app is a simple step tracker that rewards users with "fitcoins".

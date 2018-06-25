@@ -1,0 +1,32 @@
+---
+dist: trusty
+cache: pip
+sudo: required
+
+# notifications:
+#   slack:
+#     rooms:
+#       - "$SLACK_ROOM"
+#     on_pull_requests: false
+#     on_success: change
+
+services:
+  - docker
+
+env:
+  - SWIFT_SNAPSHOT=swift-4.2-DEVELOPMENT-SNAPSHOT-2018-06-21-a \
+    SNAPSHOT_TYPE=swift-4.2-branch
+
+before_install:
+  - sudo apt-get install shellcheck
+  - sudo pip install yamllint
+
+before_script:
+  - "./tests/test-shellcheck.sh"
+  - "./tests/test-yamllint.sh"
+
+jobs:
+  include:
+    - install: ./scripts/install-swift.sh
+      script: ./tests/test-local.sh
+    - script: ./tests/test-minikube.sh

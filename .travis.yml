@@ -20,13 +20,15 @@ env:
 before_install:
   - sudo apt-get install shellcheck
   - sudo pip install yamllint
+  - git clone https://github.com/IBM/pattern-ci
 
 before_script:
-  - "./tests/test-shellcheck.sh"
-  - "./tests/test-yamllint.sh"
+  - "./pattern-ci/tests/shellcheck-lint.sh containers iOS"
+  - "./pattern-ci/tests/yaml-lint.sh containers iOS"
 
 jobs:
   include:
-    - install: ./scripts/install-swift.sh
-      script: ./tests/test-local.sh
-    - script: ./tests/test-minikube.sh
+    - install: ./pattern-ci/scripts/install-swift.sh
+      script: ./tests/build-local.sh
+    - install: ./pattern-ci/scripts/install-minikube.sh
+      script: ./tests/deploy-minikube.sh

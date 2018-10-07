@@ -49,7 +49,8 @@ When you have completed this code pattern, you will understand how to:
 
 ### 1. Clone the repo
 ```
-$ git clone https://github.com/IBM/<this-repo-name>
+$ git clone https://github.com/IBM/kitura-on-kubernetes
+$ cd kitura-on-kubernetes
 ```
 
 ### 2. Create IBM Cloud Kubernetes Service

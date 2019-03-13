@@ -17,7 +17,7 @@ build_images() {
 
 kubectl_deploy() {
     echo "Enabling minikube ingress"
-    minikube addons enable ingress
+    sudo minikube addons enable ingress
 
     echo "Deploying postgres"
     kubectl create cm postgres-cm --from-env-file=postgres-config.env
@@ -70,7 +70,9 @@ kubectl_deploy() {
 
 verify_deploy(){
     echo "Verifying deployment was successful"
-    if ! sleep 1 && curl -sS "https://$(minikube ip)/users" -k; then
+    sleep 60
+    kubectl get ingress
+    if ! curl -sSL "http://$(minikube ip)/users" -k; then
         test_failed "$0"
     fi
 }
